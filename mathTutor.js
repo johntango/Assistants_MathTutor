@@ -12,7 +12,7 @@ const secretKey = process.env.OPENAI_API_KEY;
 const openai = new OpenAI({
   apiKey: secretKey,
 });
-console.log("Connecting to OpenAI...\n"+secretKey);
+console.log("Connecting to OpenAI...\n");
 
 async function askQuestion(question) {
   return new Promise((resolve, reject) => {
